@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayoud"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculadora">
+
+
+    <TextView
+        android:id="@+id/txt_titulocalculadora"
+        android:layout_width="201dp"
+        android:layout_height="29dp"
+        android:text="@string/calculadora"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/etProceso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <EditText
+        android:id="@+id/etProceso"
+        android:layout_width="413dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:hint="@string/inserte_numero"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/btnSiete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="96dp"
+        android:text="@string/sietea"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etProceso" />
+
+    <Button
+        android:id="@+id/btnOcho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="96dp"
+        android:text="@string/ochoa"
+        app:layout_constraintStart_toEndOf="@+id/btnSiete"
+        app:layout_constraintTop_toBottomOf="@+id/etProceso" />
+
+    <Button
+        android:id="@+id/btnNueve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="96dp"
+        android:text="@string/nuevea"
+        app:layout_constraintStart_toEndOf="@+id/btnOcho"
+        app:layout_constraintTop_toBottomOf="@+id/etProceso" />
+
+    <Button
+        android:id="@+id/btnCuatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/cuatroa"
+        app:layout_constraintEnd_toStartOf="@+id/btnCinco"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSiete" />
+
+    <Button
+        android:id="@+id/btnCinco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/cincoa"
+        app:layout_constraintEnd_toStartOf="@+id/btnSeis"
+        app:layout_constraintTop_toBottomOf="@+id/btnOcho" />
+
+    <Button
+        android:id="@+id/btnSeis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/seisa"
+        app:layout_constraintEnd_toStartOf="@+id/btnMulti"
+        app:layout_constraintTop_toBottomOf="@+id/btnNueve" />
+
+    <Button
+        android:id="@+id/btnUno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/unoa"
+        app:layout_constraintEnd_toStartOf="@+id/btnDos"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCuatro" />
+
+    <Button
+        android:id="@+id/btnDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/dosa"
+        app:layout_constraintEnd_toStartOf="@+id/btnTres"
+        app:layout_constraintTop_toBottomOf="@+id/btnCinco" />
+
+    <Button
+        android:id="@+id/btnTres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/tresa"
+        app:layout_constraintEnd_toStartOf="@+id/btnResta"
+        app:layout_constraintTop_toBottomOf="@+id/btnSeis" />
+
+    <Button
+        android:id="@+id/btnPunto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/punto"
+        app:layout_constraintBottom_toTopOf="@+id/btnLimpiar"
+        app:layout_constraintEnd_toStartOf="@+id/btnCero"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUno"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnCero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/cero"
+        app:layout_constraintBottom_toTopOf="@+id/btn_regreso3"
+        app:layout_constraintEnd_toStartOf="@+id/btnIgual"
+        app:layout_constraintTop_toBottomOf="@+id/btnDos"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnIgual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/igual"
+        app:layout_constraintBottom_toTopOf="@+id/btnLimpiar"
+        app:layout_constraintEnd_toStartOf="@+id/btnSuma"
+        app:layout_constraintTop_toBottomOf="@+id/btnTres"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnMulti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/multiplicacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDiv" />
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="@string/division"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toEndOf="@+id/btnNueve"
+        app:layout_constraintTop_toBottomOf="@+id/etProceso" />
+
+    <Button
+        android:id="@+id/btnResta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/resta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMulti" />
+
+    <Button
+        android:id="@+id/btnSuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/suma"
+        app:layout_constraintBottom_toTopOf="@+id/btnLimpiar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnResta"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="216dp"
+        android:layout_height="48dp"
+        android:text="@string/limpiar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_regreso3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCero"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <Button
+        android:id="@+id/btn_regreso3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="RegresarMenu"
+        android:text="@string/regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

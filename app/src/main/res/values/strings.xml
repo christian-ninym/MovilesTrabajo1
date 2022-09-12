@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">lOGIN</string>
+
+    <string name="ID">ID</string>
+    <string name="PASSWORD">Password</string>
+    <string name="login">login</string>
+
+    <string name="menu">MENU</string>
+    <string name="promedio">PROMEDIO</string>
+    <string name="calculadora">CALCULADORA</string>
+    <string name="factorial">FACTORIAL</string>
+    <string name="cajero">CAJERO</string>
+    <string name="salir">CERRAR SESION</string>
+
+
+    <string name="ttl_factorial">HALLAR FACTORIAL</string>
+    <string name="inserte_numero">Inserte numero</string>
+    <string name="buscar">Buscar</string>
+    <string name="regresar">Regresar</string>
+    <string name="respuesta">Respuesta</string>
+
+
+    <string name="ttl_Promedio">HALLAR PROMEDIO</string>
+    <string name="ttl_Cajero">BIENVENIDO AL CAJERO</string>
+    <string name="datos">Datos</string>
+    <string name="consultar">CONSULTAR SALDO</string>
+    <string name="retirar">RETIRAR SALDO</string>
+    <string name="agregar">AGREGAR SALDO</string>
+    <string name="dinero">Inserte el monto deseado s/.</string>
+    <string name="respuestabanco"> 0.00 </string>
+
+
+    <string name="uno">1°</string>
+    <string name="dos">2°</string>
+    <string name="tres">3°</string>
+    <string name="cuatro">4°</string>
+    <string name="cinco">5°</string>
+    <string name="seis">6°</string>
+    <string name="siete">7°</string>
+    <string name="ocho">8°</string>
+    <string name="nueve">9°</string>
+    <string name="diez">10°</string>
+    <string name="Respuestaa">0</string>
+
+
+    <string name="unoa">1</string>
+    <string name="dosa">2</string>
+    <string name="tresa">3</string>
+    <string name="cuatroa">4</string>
+    <string name="cincoa">5</string>
+    <string name="seisa">6</string>
+    <string name="sietea">7</string>
+    <string name="ochoa">8</string>
+    <string name="nuevea">9</string>
+    <string name="dieza">10</string>
+
+    <string name="division">/</string>
+    <string name="multiplicacion">X</string>
+    <string name="resta">-</string>
+    <string name="suma">+</string>
+    <string name="limpiar">LIMPIAR</string>
+    <string name="igual">=</string>
+    <string name="punto">.</string>
+    <string name="cero">0</string>
+
+</resources>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Promedio">
+
+    <Button
+        android:id="@+id/btn_buscar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="168dp"
+        android:onClick="evaluar"
+        android:text="@string/buscar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_regreso2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <TextView
+        android:id="@+id/txt_titulopromedio"
+        android:layout_width="234dp"
+        android:layout_height="86dp"
+        android:text="@string/ttl_Promedio"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_regreso2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <TextView
+        android:id="@+id/txt_datospromedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/datos"
+        app:layout_constraintBottom_toTopOf="@+id/btn_regreso2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulopromedio"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <EditText
+        android:id="@+id/dato_1"
+        android:layout_width="79dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/uno"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btn_regreso2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_datospromedio"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <EditText
+        android:id="@+id/dato_2"
+        android:layout_width="83dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/dos"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dato_3"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toEndOf="@+id/dato_1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_datospromedio"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <EditText
+        android:id="@+id/dato_3"
+        android:layout_width="79dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/tres"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dato_4"
+        app:layout_constraintTop_toBottomOf="@+id/txt_datospromedio"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <EditText
+        android:id="@+id/dato_4"
+        android:layout_width="78dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="@string/cuatro"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_datospromedio" />
+
+    <EditText
+        android:id="@+id/dato_6"
+        android:layout_width="82dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/seis"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/dato_7"
+        app:layout_constraintTop_toBottomOf="@+id/dato_2" />
+
+    <EditText
+        android:id="@+id/dato_5"
+        android:layout_width="79dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/cinco"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/dato_6"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dato_1" />
+
+    <EditText
+        android:id="@+id/dato_8"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="@string/ocho"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dato_4" />
+
+    <EditText
+        android:id="@+id/dato_7"
+        android:layout_width="78dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/siete"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btn_regreso2"
+        app:layout_constraintEnd_toStartOf="@+id/dato_8"
+        app:layout_constraintTop_toBottomOf="@+id/dato_3"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <EditText
+        android:id="@+id/dato_9"
+        android:layout_width="177dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="@string/nueve"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btn_regreso2"
+        app:layout_constraintEnd_toStartOf="@+id/dato_10"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dato_5"
+        app:layout_constraintVertical_bias="0.051"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/dato_10"
+        android:layout_width="176dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:layout_span="3"
+        android:ems="10"
+        android:hint="@string/diez"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btn_regreso2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dato_7"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <Button
+        android:id="@+id/btn_regreso2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:onClick="RegresarMenu"
+        android:text="@string/regresar"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_respromedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Respuestaa"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_regreso2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_buscar2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cajero">
+
+    <TextView
+        android:id="@+id/txtcajero"
+        android:layout_width="304dp"
+        android:layout_height="95dp"
+        android:text="@string/ttl_Cajero"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_regreso4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.209" />
+
+    <EditText
+        android:id="@+id/txtNumerador"
+        android:layout_width="307dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/dinero"
+        android:inputType="numberDecimal"
+        android:textColorHint="#546E7A"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRetirar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcajero"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btnRetirar"
+        android:layout_width="128dp"
+        android:layout_height="68dp"
+        android:text="@string/consultar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_regreso4"
+        app:layout_constraintEnd_toStartOf="@+id/btnConsultarSaldo"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcajero"
+        app:layout_constraintVertical_bias="0.376" />
+
+    <Button
+        android:id="@+id/btnConsultarSaldo"
+        android:layout_width="122dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/retirar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_regreso4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcajero"
+        app:layout_constraintVertical_bias="0.379" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="127dp"
+        android:layout_height="69dp"
+        android:text="@string/agregar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_regreso4"
+        app:layout_constraintEnd_toStartOf="@+id/btnRetirar"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcajero"
+        app:layout_constraintVertical_bias="0.381" />
+
+    <TextView
+        android:id="@+id/txtBancoRsp"
+        android:layout_width="190dp"
+        android:layout_height="63dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:text="@string/respuestabanco"
+        app:layout_constraintBottom_toTopOf="@+id/btn_regreso4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRetirar" />
+
+    <Button
+        android:id="@+id/btn_regreso4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="RegresarMenu"
+        android:text="@string/regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.834" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <TextView
+        android:id="@+id/txt_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="@string/menu"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_cajero"
+        android:layout_width="273dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:onClick="entrarCajero"
+        android:text="@string/cajero"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_calculadora"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <Button
+        android:id="@+id/btn_calculadora"
+        android:layout_width="274dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="24dp"
+        android:onClick="entrarCalculadora"
+        android:text="@string/calculadora"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_promedio" />
+
+    <Button
+        android:id="@+id/btn_promedio"
+        android:layout_width="274dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="24dp"
+        android:onClick="entrarPromedio"
+        android:text="@string/promedio"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_factorial"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+    <Button
+        android:id="@+id/btn_factorial"
+        android:layout_width="273dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="60dp"
+        android:onClick="entrarFactorial"
+        android:text="@string/factorial"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_menu" />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Salir"
+        android:text="@string/salir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cajero"
+        app:layout_constraintVertical_bias="0.7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
